@@ -37,38 +37,6 @@ function displayItems(items) {
   });
 }
 
-// Add a new item
-async function addItem() {
-  const newItemInput = document.getElementById('newItem');
-  const newItem = { name: newItemInput.value };
-
-  await fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(newItem)
-  });
-
-  newItemInput.value = '';
-  fetchItems();
-}
-
-// Update an item
-async function updateItem(id) {
-  const newName = prompt('Enter new name:');
-  if (newName) {
-    await fetch(`${apiUrl}/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ name: newName })
-    });
-    fetchItems();
-  }
-}
-
 // Delete an item
 async function deleteItem(id) {
   await fetch(`${apiUrl}bitrockers/${id}`, {
