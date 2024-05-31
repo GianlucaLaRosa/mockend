@@ -22,6 +22,7 @@ models:
       _count: 8
       name: { oneOfString: [Stefano, Daniele, Samantha, Gabriella, Mattia, Daniel, Yi] }
       surname: lastName
+      category: { oneOfString: [one, two, three] }
       avatar: { oneOfString: [bruno, chiare, giro, moro, ripam, zhang, zotti] }
       age: { int: [18, 40] }
       isCool: { bool: 75 }
