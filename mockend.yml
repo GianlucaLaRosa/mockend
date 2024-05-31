@@ -21,6 +21,7 @@ models:
     fake:
       _count: 8
       name: { oneOfString: [Stefano, Daniele, Samantha, Gabriella, Mattia, Daniel, Yi] }
+      name_bis: { oneOfString: [one, two, three] }
       surname: lastName
       category: { oneOfString: [one, two, three] }
       avatar: { oneOfString: [bruno, chiare, giro, moro, ripam, zhang, zotti] }
