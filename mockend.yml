@@ -25,7 +25,11 @@ models:
       avatar: { stringOf: [bruno, chiare, giro, moro, ripam, zhang, zotti] }
       age: { int: [18, 40] }
       isCool: { bool: 75 }
-      mailPassword: password
+      password: password
       accTime: day
-      quote: { loremParagraphs: [20, 40] }
+      quote: { loremParagraphs: [80, 120] }
+      homeTown: city
+      country: country
+      site: URL
+      backgroundColor: hexColor
 
