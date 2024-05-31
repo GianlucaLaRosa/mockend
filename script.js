@@ -13,7 +13,7 @@ function displayItems(items) {
   itemList.innerHTML = '';
   items.forEach(item => {
     const div = document.createElement('div');
-    div.style.backgroundColor = item.backgroundColor;
+    div.style.backgroundColor = item.backgroundColor+33;
     div.className = 'card';
     div.innerHTML = `
       <div class="card__header">
