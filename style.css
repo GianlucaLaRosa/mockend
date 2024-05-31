@@ -20,6 +20,12 @@ header {
   padding-block: 20px;
 }
 
+.sorter {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 24px;
+}
+
 #cards {
   display: grid;
   grid-template-columns: 1fr 1fr;

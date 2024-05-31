@@ -1,5 +1,6 @@
 models:
   Bitrocker:
+    hasMany: [Follower]
     fake:
       _count: 8
       name: { stringOf: [Luca, Davide, Gianluca, Federico, Ginevra, Marco] }
@@ -14,4 +15,9 @@ models:
       country: country
       site: URL
       backgroundColor: hexColor
+  Follower:
+    belongsTo: [Bitrocker]
+    fake:
+      _count: 5
+      name: celebritySport
 
