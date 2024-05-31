@@ -29,4 +29,6 @@ models:
       mailPassword: password
       accTime: day
       quote: { loremParagraphs: [20, 40] }
+      post: { loremParagraphs: [10, 100] }
+      comment: { loremParagraphs: [10, 100] }
 
