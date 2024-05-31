@@ -1,0 +1,21 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(#ff8f1f, #ce4c01);
+  color: white;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 80px;
+}
+
+.secondary_header {
+  background-color: #eeeeed;
+  color: black;
+  font-size: 40px;
+  padding-block: 20px;
+}
