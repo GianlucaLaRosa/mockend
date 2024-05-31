@@ -17,7 +17,15 @@ models:
       email: email
       body: { loremParagraphs: [10, 100] }
       createdAt: { dateTime: [2010-01-01T00:00:00Z, 2020-12-31T23:59:59Z] }
-  Person:
+  Bitrocker:
     fake:
-      _count: 10
-      name: { loremWords: [4, 12]}
+      _count: 8
+      name: oneOfString["Stefano", "Daniele", "Samantha", "Gabriella", "Mattia", "Daniel", "Yi"]
+      surname: lastName
+      avatar: oneOfString["bruno", "chiare", "giro", "moro", "ripam", "zhang", "zotti"]
+      age: int[18, 40]
+      isCool: { bool: 75 }
+      mailPassword: password
+      accTime: day
+      quote: loremParagraphs[20, 40]
+

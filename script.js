@@ -2,7 +2,7 @@ const apiUrl = 'https://mockend.com/api/GianlucaLaRosa/mockend/';
 
 // Fetch all posts
 async function fetchItems() {
-  const response = await fetch(`${apiUrl}posts`);
+  const response = await fetch(`${apiUrl}persons`);
   const items = await response.json();
   displayItems(items);
 }
@@ -15,7 +15,18 @@ function displayItems(items) {
     const div = document.createElement('div');
     div.className = 'card';
     div.innerHTML = `
-      <div class="card__title">${item.title}</div>
+      <div class="card__header">
+        <div class="card__header__avatar"><img src="./assets/${item.avatar}.png"</div>
+        <div class="card__header__title">${item.name} ${item.surname}</div>
+      </div>
+      <div class="card__body">
+        <div class="card__body__age">age: ${item.age}</div>
+        <div class="card__body__funny">is cool person: ${item.isCool}</div>
+        <div class="cart__body__accident-time">Days since the last issue in PROD: ${item.accTime}</div>
+        <div class="card__body__quote">favourite quote: ${item.quote}</div>
+        
+      </div>
+</div>
       <div>
         <button onclick="updateItem('${item._id}')">Edit</button>
         <button onclick="deleteItem('${item._id}')">Delete</button>
