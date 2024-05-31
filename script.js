@@ -24,7 +24,7 @@ function displayItems(items) {
         <div class="card__body__funny">is cool person: ${item.isCool}</div>
         <div class="cart__body__accident-time">Days since the last issue in PROD: ${item.accTime}</div>
         <div class="card__body__quote">favourite quote: ${item.quote}</div>
-        
+        <div class="card__body__pwd">email password: ${item.mailPassword}</div>
       </div>
 </div>
       <div>
