@@ -10,10 +10,9 @@ async function fetchItems() {
 // Display items in the cards
 function displayItems(items) {
   const itemList = document.getElementById('cards');
-  itemList.innerHTML = '';
   items.forEach(item => {
     const div = document.createElement('div');
-    div.style.backgroundColor = item.backgroundColor+33;
+    div.style.backgroundColor = item.backgroundColor+11;
     div.className = 'card';
     div.innerHTML = `
       <div class="card__header">
@@ -28,9 +27,7 @@ function displayItems(items) {
         <div class="card__body__quote">favourite quote: ${item.quote}</div>
         <div class="card__body__repo">personal website: ${item.site}, access password: ${item.password}</div>
       </div>
-</div>
-      <div>
-        <button onclick="updateItem('${item._id}')">Edit</button>
+      <div class="card__footer">
         <button onclick="deleteItem('${item._id}')">Delete</button>
       </div>
     `;

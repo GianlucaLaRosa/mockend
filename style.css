@@ -28,10 +28,10 @@ header {
 }
 
 .card {
-  border: 2px solid gray;
+  border: 1px solid gray;
   border-radius: 4px;
   padding: 18px 24px;
-  fill: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card__header {
@@ -57,4 +57,26 @@ header {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.card__footer {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.card__footer>button {
+  height: 32px;
+  width:fit-content;
+  padding: 8px 24px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #ff8f1f;
+  color: white;
 }
