@@ -2,7 +2,7 @@ const apiUrl = 'https://mockend.com/api/GianlucaLaRosa/mockend/';
 
 // Fetch all posts
 async function fetchItems() {
-  const response = await fetch(`${apiUrl}persons`);
+  const response = await fetch(`${apiUrl}bitrockers`);
   const items = await response.json();
   displayItems(items);
 }

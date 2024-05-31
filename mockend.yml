@@ -20,12 +20,12 @@ models:
   Bitrocker:
     fake:
       _count: 8
-      name: oneOfString["Stefano", "Daniele", "Samantha", "Gabriella", "Mattia", "Daniel", "Yi"]
+      name: { oneOfString: [Stefano, Daniele, Samantha, Gabriella, Mattia, Daniel, Yi] }
       surname: lastName
-      avatar: oneOfString["bruno", "chiare", "giro", "moro", "ripam", "zhang", "zotti"]
-      age: int[18, 40]
+      avatar: { oneOfString :[bruno, chiare, giro, moro, ripam, zhang, zotti] }
+      age: { int: [18, 40] }
       isCool: { bool: 75 }
       mailPassword: password
       accTime: day
-      quote: loremParagraphs[20, 40]
+      quote: { loremParagraphs: [20, 40] }
 
